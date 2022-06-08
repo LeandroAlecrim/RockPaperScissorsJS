@@ -4,18 +4,35 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Rock Paper Scissors</title>
-    <link rel="stylesheet" href="style.css">
-    <script src="script.js"></script>
+    <link rel="stylesheet" href="assets/css/style.css">
+    <script src="js/script.js"></script>
 </head>
 
 <body>
-    <h1 id="opponent-score">0</h1>
-    <img id="opponent-choice">
-    <br>
-    <img id="your-choice">
-    <div id="choices"></div>
-    <h1 id="your-score">0</h1>
+    <div class="title">
+        <span style="--i:1">Jo-</span>
+        <span style="--i:2">ken-</span>
+        <span style="--i:3">po!</span>
+    </div>
 
+    <div class="game">
+        <div class="border label">
+            <div class="label-choice">
+                <h1 id="opponent-score">0</h1>
+                <img id="opponent-choice" class="img-choice">
+                <h1>Computer</h1>
+            </div>
+
+            <div class="label-choice">
+                <h1 id="your-score">0</h1>
+                <img id="your-choice" class="img-choice">
+                <h1>You</h1>
+            </div>
+        </div>
+
+        <div id="choices" class="label"></div>
+        <h1>Make your choice</h1>
+    </div>
 </body>
 
 </html>
