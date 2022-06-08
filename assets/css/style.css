@@ -1,28 +1,76 @@
+/* Tag */
 body {
   font-family: Arial, Helvetica, sans-serif;
   text-align: center;
 }
 
-#opponent-choice {
-    width: 240px;
-    height: 240px;
-    margin-top: 10px;
+/* Class */
+.border {
+  border: 1px black solid;
+  border-radius: 10%;
 }
 
-#your-choice {
-    width: 240px;
-    height: 240px;
-    margin-top: 10px;
+.game {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
 }
 
-#choices{
-    width: 240px;
-    height: 80px;
-    margin: 0 auto;
-    margin-top: 10px;
+.img-choice {
+  width: 10rem;
+  height: 10rem;
 }
 
-#choices img{
-    width: 80px;
-    height: 80px;
+.label {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+}
+
+.label img {
+  padding: 0.5rem;
+}
+
+.title {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 3rem;
+  font-weight: 800;
+  text-transform: uppercase;
+}
+
+.title span {
+  animation: shake 1.5s;
+  animation-delay: calc(0.5s * var(--i));
+  animation-duration: 1s;
+}
+
+/* Id */
+#choices {
+  display: flex;
+  width: 10rem;
+  height: 5rem;
+  margin: 0 auto;
+  margin-top: 2rem;
+}
+
+#choices img {
+  width: 5rem;
+  height: 5rem;
+}
+
+#choices.label img {
+  cursor: pointer;
+}
+
+/* Animation */
+@keyframes shake {
+  0% {
+    transform: translateY(0);
+  }
+  50% {
+    transform: translateY(-10px);
+  }
 }
